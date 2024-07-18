@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="calculator-div">
+        <form name="forms">
+            <input type="text" id="answer" name="answer" readonly><br>
+            <div class="row">
+                <input type="button" value="0" onclick="appendValue('0')">
+                <input type="button" value="." onclick="appendValue('.')">
+                <input type="button" value="+" onclick="appendValue('+')">
+                <input type="button" value="-" onclick="appendValue('-')">
+            </div>
+            <div class="row">
+                <input type="button" value="1" onclick="appendValue('1')">
+                <input type="button" value="2" onclick="appendValue('2')">
+                <input type="button" value="3" onclick="appendValue('3')">
+                <input type="button" value="/" onclick="appendValue('/')">
+            </div>
+            <div class="row">
+                <input type="button" value="4" onclick="appendValue('4')">
+                <input type="button" value="5" onclick="appendValue('5')">
+                <input type="button" value="6" onclick="appendValue('6')">
+                <input type="button" value="*" onclick="appendValue('*')">
+            </div>
+            <div class="row">
+                <input type="button" value="7" onclick="appendValue('7')">
+                <input type="button" value="8" onclick="appendValue('8')">
+                <input type="button" value="9" onclick="appendValue('9')">
+                <input type="button" value="00" onclick="appendValue('00')">
+            </div>
+            <div class="row">
+                <input type="button" value="=" onclick="calculateResult()">
+                <input type="button" value="AC" onclick="removeLastCharacter()">
+                <input type="button" value="Clear All" id="clear" onclick="clearAll()">
+            </div>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
